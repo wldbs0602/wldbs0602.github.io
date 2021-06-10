@@ -5,7 +5,8 @@
 	<title></title>
 	<style type="text/css">
 		*{
-			margin-left: 10px;
+			margin: 0px;
+			padding: 0;
 		}
 		li {
 			list-style-type: none;
@@ -14,34 +15,53 @@
 			clear: both;
 		}
 		header {
-			width: 1300px;
+			width: 1364px;
 			height: 90px;
 			border: solid 1px black;
 			background-color: #000066;
-			/*margin-top: 10px;*/
 		}
 		#logo {
-			margin: 10px;
-			margin-top: 10;
+			margin-left: 30px;
+			margin-top: 26px;
 			float: left;
 			font-weight: bold;
 			font-style: italic;
 			color: white;
 		}
+		#home{
+			float: right;
+			margin-top: 50px;
+			margin-right:20px;
+			font-weight: bold;
+		}
+		a:link{
+			color: white;
+			text-decoration: none;
+		}
+		a:visited{
+			color: white;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
 		nav {
 			width: 200px;
 			float: left;
 			margin-top: 30px;
+			margin-left: 20px;
 			/*border: solid 1px black;*/
 		}
 		nav li {
 			margin-top: 10px;
 			margin-bottom: 20px;
 		}
+		nav li:hover{
+			filter: drop-shadow(5px 5px 5px gray);
+		}
 		footer {
-			width: 1300px;
-			height: 70px;
-			margin-bottom: 10px;
+			width: 1364px;
+			height: 75px;
+			margin-top: 8px;
 			/*border: solid 1px black;*/
 		}
 		#person {
@@ -56,7 +76,7 @@
 		}
 		section{
 			float: left;
-			margin-top: 10px;
+			margin: 20px 20px 0 20px ;
 			border: 0px;
 		}
 		aside{
@@ -69,13 +89,16 @@
 			margin-top:10px;
 			margin-bottom: 20px;
 		}
+		aside li:hover{
+			filter: drop-shadow(5px 5px 5px gray);
+		}
+
 	</style>
 </head>
 <body>
 	<header>
-		<div id="logo">
-			<h2>SWITZERLAND</h2>
-		</div>
+		<div id="logo"><h2>SWITZERLAND</h2></div>
+		<div id="home"><a href="basic.html" target="hi"><!-- <img src="homeword.jpg" width="80px"> -->HOME</div>
 	</header>
 	<div class="clear"></div>
 	<section>
@@ -83,17 +106,16 @@
 	</section>
 	<nav>
 		<ul>
-			<li><a href="swiss.html" target="hi" >🌲 스위스</a></li>
-			<li><a href="tour.html" target="hi" >⛲ 관광지 </a></li>
-			<li><a href="food.html" target="hi" >🧈 음식 </a></li>
-			<li><a href="basic.html" target="hi">🙂 Home </a></li>
+			<li><a href="swiss.html" target="hi" ><div class="ani"><img src="swissword1.jpg"></div></a></li>
+			<li><a href="tour.html" target="hi" ><div class="ani"><img src="tourword1.jpg"></div></a></li>
+			<li><a href="food.html" target="hi" ><div class="ani"><img src="foodword.jpg"></div></a></li>
 		</ul>
 	</nav>
 	<aside>
 		
 	<ul>
-			<li><a href="https://flight.naver.com/flights/" target="_blank">🛫 비행기 예약하기</a></li>
-			<li><a href="https://hotel.naver.com/hotels/main" target="_blank">🏫 호텔 예약하기</a></li>		
+			<li><a href="https://flight.naver.com/flights/" target="_blank"><img src="plane.jpg"></a></li>
+			<li><a href="https://hotel.naver.com/hotels/main" target="_blank"><img src="hotel.jpg"></a></li>		
 		</ul>
 		
 	</aside>
